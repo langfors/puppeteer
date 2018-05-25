@@ -17,7 +17,7 @@
     "doc": "node utils/doclint/cli.js",
     "coverage": "cross-env COVERAGE=true npm run unit",
     "test-node6-transformer": "node utils/node6-transform/test/test.js",
-    "postinstall": "npm run build",
+    "postinstall": "npm run install && npm run build",
     "build": "node utils/node6-transform/index.js",
     "unit-node6": "node node6/test/test.js",
     "tsc": "node utils/protocol-types-generator && tsc -p .",

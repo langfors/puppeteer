@@ -30,8 +30,7 @@ const downloadHost = process.env.PUPPETEER_DOWNLOAD_HOST || process.env.npm_conf
 const puppeteer = require('./index');
 const browserFetcher = puppeteer.createBrowserFetcher({ host: downloadHost });
 
-const revision = process.env.PUPPETEER_CHROMIUM_REVISION || process.env.npm_config_puppeteer_chromium_revision
-  || require('./package.json').puppeteer.chromium_revision;
+const revision = "555668";
 
 const revisionInfo = browserFetcher.revisionInfo(revision);
 

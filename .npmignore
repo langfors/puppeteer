@@ -1,6 +1,5 @@
 # exclude all tests
 test
-utils/node6-transform
 
 # exclude internal type definition files
 /lib/*.d.ts

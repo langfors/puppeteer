@@ -17,7 +17,9 @@
 let asyncawait = true;
 try {
   new Function('async function test(){await 1}');
+  console.log("ASYNC DETECTED");
 } catch (error) {
+  console.log("NO ASYNC DETECTED");
   asyncawait = false;
 }
 

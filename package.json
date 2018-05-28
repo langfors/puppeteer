@@ -1,5 +1,5 @@
 {
-  "name": "@langfors/puppeteer",
+  "name": "puppeteer",
   "version": "1.4.2",
   "description": "A high-level API to control headless Chrome over the DevTools Protocol",
   "main": "index.js",

@@ -1,5 +1,4 @@
 # exclude all tests
-test
 
 # exclude internal type definition files
 /lib/*.d.ts
@@ -14,9 +13,6 @@ node_modules
 *.pyc
 .vscode
 package-lock.json
-/node6/test
-/node6/utils
-/test
 /docs
 yarn.lock
 

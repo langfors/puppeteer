@@ -104,19 +104,19 @@ function buildNode6IfNecessary() {
 
   // if this package is installed from NPM, then it already has up-to-date node6
   // folder.
-  if (!fs.existsSync(path.join('utils', 'node6-transform')))
-    return;
-  let asyncawait = true;
-  try {
-    new Function('async function test(){await 1}');
-  } catch (error) {
-    console.log("NO ASYNC DETECTED in install.js !!");
-    asyncawait = false;
-  }
-  // if async/await is supported, then node6 is not needed.
-  if (asyncawait)
-    return;
-  // Re-build node6/ folder.
+  // if (!fs.existsSync(path.join('utils', 'node6-transform')))
+  //   return;
+  // let asyncawait = true;
+  // try {
+  //   new Function('async function test(){await 1}');
+  // } catch (error) {
+  //   console.log("NO ASYNC DETECTED in install.js !!");
+  //   asyncawait = false;
+  // }
+  // // if async/await is supported, then node6 is not needed.
+  // if (asyncawait)
+  //   return;
+  // // Re-build node6/ folder.
   console.log('Building Puppeteer for Node 6');
   require(path.join(__dirname, 'utils', 'node6-transform'));
 }

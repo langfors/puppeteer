@@ -24,7 +24,7 @@ try {
 }
 
 // If node does not support async await, use the compiled version.
-if (asyncawait)
+// if (asyncawait)
   module.exports = require('./lib/Puppeteer');
-else
-  module.exports = require('./node6/lib/Puppeteer');
+// else
+//   module.exports = require('./node6/lib/Puppeteer');
